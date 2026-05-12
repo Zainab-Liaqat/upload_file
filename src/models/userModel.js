@@ -22,12 +22,12 @@ const userSchema = new mongoose.Schema({
         required : true
     },
     avatar : {
-        type : String,
-        required: true
-    }
+        type : String   ,
+    required : true }
 },{
     timestamps : true
 })
+
 userSchema.pre('save', async function() {
 
     if(!this.isModified('password')) return;

@@ -4,4 +4,5 @@ const asyncHandler = (fn) =>{
         .catch(next);
     }
 }
-export default asyncHandler;
+export {asyncHandler};
+
